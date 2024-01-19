@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capricorn</title>
+
+    <style>
+        body{
+            background: linear-gradient(to right, #96b7ed ,  #964B00);
+            min-height: 40vh;
+            margin: 0;
+            background-size: 200% 100%;
+            animation: moveGradient 7s linear infinite;
+        }
+
+        @keyframes moveGradient {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 100% 0%;
+      }
+    }
+
+        h1{
+            text-align: center;
+            font-size: 69px;
+            color: white;
+        }
+
+        .heading>.signinfo {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 10px;
+            padding: 30px 40px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        }
+
+        .heading>.signinfo>p {
+            color:rgb(254, 254, 255);
+            font-size: 40px;
+        }
+
+
+
+        /* Media query for small devices (e.g., smartphones) */
+        @media only screen and (max-width: 374px) {
+            .heading>.signinfo>p {
+            color:rgb(254, 254, 255);
+            font-size: 20px;
+        }
+        }
+
+        @media only screen and (min-width: 374px) and (max-width: 767px) {
+            .heading>.signinfo>p {
+            color:rgb(254, 254, 255);
+            font-size: 26px;
+        }
+        }
+
+        /* Media query for medium devices (e.g., tablets) */
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            .heading>.signinfo>p {
+            color:rgb(254, 254, 255);
+            font-size: 30px;
+        }
+        }
+
+        /* Media query for large devices (e.g., desktops) */
+        @media only screen and (min-width: 1024px) {
+            .heading>.signinfo>p {
+            color:rgb(254, 254, 255);
+            font-size: 40px;
+        }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+
+        <div class="headlineofcapricorn">
+            <h1>Capricorn ♑︎</h1>
+        </div>
+
+        <div class="signinfo">
+            <p>Birthday &#127874; : December 22 - January 19 <br>
+                Color: Brown<br>
+                Lucky Numbers: 8, 17, 26 ✨ <br>
+                Ruling Planet: Saturn &#9796 <br>
+                Element: Earth &#127758 <br>
+                Birthstone: Garnet <iconify-icon icon="fa-solid:gem" style="color: red;" flip="horizontal,vertical"></iconify-icon> </p>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

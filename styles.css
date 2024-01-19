@@ -1,0 +1,114 @@
+body{
+    background: url("https://wallpaperaccess.com/full/53090.jpg") no-repeat;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.heading h1{
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.zodiaccards{
+    display: grid;
+    grid-template-columns: repeat(4,0.1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.zodiaccards h5{
+    text-align: center;
+    color: #fff;
+}
+
+.zodiaccards a{
+    position:static;
+    bottom: 5px;
+    right: 1px;
+    left: 1px;
+    top: 220px;
+}
+
+.card{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.card:hover{
+    transform: scale(1.02);
+    backdrop-filter: blur(8px);
+}
+
+.card-body a{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(222, 81, 38, 0.636);
+    border: none;
+    font-size: 17px;
+    background-image: linear-gradient(to right, #DE5126A2, #0e2286)
+}
+
+.card-body a:hover{
+    background-color: rgba(93, 206, 206, 0.674);
+}
+
+@media screen and (max-width:319px) {
+    .zodiaccards{
+        grid-template-columns: repeat(1, 0.1fr);
+    }
+    .heading h1{
+        font-size: 1.2rem;
+        font-family: "Nunito Sans", sans-serif;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .zodiaccards {
+      grid-template-columns: repeat(1, 0.1fr); 
+    }
+    .heading h1{
+        font-size: 1.2rem;
+        font-family: "Nunito Sans", sans-serif;
+    }
+  }
+
+  @media screen and (min-width: 426) and (max-width: 595px) {
+    .zodiaccards {
+      grid-template-columns: repeat(2, 0.1fr); 
+    }
+    .heading h1{
+        font-size: 1.2rem;
+        font-family: "Nunito Sans", sans-serif;
+    }
+  }
+
+ @media screen and (min-width: 596px) and (max-width: 1223px) {
+    .zodiaccards{
+        grid-template-columns: repeat(2, 0.1fr);
+    }
+    .heading h1{
+        font-size: 2rem;
+        font-family: "Nunito Sans", sans-serif;
+    }
+ }
+
+ @media screen and (min-width: 881px) and (max-width: 1223px) {
+    .zodiaccards {
+      grid-template-columns: repeat(3, 0.1fr); 
+    }
+    .heading h1{
+        font-size: 2rem;
+        font-family: "Nunito Sans", sans-serif;
+    }
+  }
